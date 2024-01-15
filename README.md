@@ -12,3 +12,5 @@ IOCP 단계별 연습
 ## 실습 단계 (구현한 것들만 나열)
 1. 가장 간단한 IOCP 서버. Echo 서버 코드 만들기
     * IOCP API 동작에 대해서 이해할 수 있다.
+2. OverlappedEx 구조체에 있는 char m_szBuf[ MAX_SOCKBUF ]를 stClientInfo 구조체로 이동 및 코드 분리하기
+    * 앞 단계에는 OverlappedEx 구조체에 m_szBuf가 있어서 불 필요한 메모리 낭비가 발생함

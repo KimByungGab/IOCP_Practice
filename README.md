@@ -14,3 +14,6 @@ IOCP 단계별 연습
     * IOCP API 동작에 대해서 이해할 수 있다.
 2. OverlappedEx 구조체에 있는 char m_szBuf[ MAX_SOCKBUF ]를 stClientInfo 구조체로 이동 및 코드 분리하기
     * 앞 단계에는 OverlappedEx 구조체에 m_szBuf가 있어서 불 필요한 메모리 낭비가 발생함
+3. 애플리케이션과 네트워크 코드 분리하기
+    * IOCP를 네트워크 라이브러리화 하기 위해 네트워크와 서버 로직 코드를 분리한다.
+    * 연결, 끊어짐, 데이터 받음을 애플리케이션에 전달하기
